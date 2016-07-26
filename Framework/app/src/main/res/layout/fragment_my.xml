@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ae9191"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/camera" />
+
+        <TextView
+            android:id="@+id/nickNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="明字"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/describeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="描述"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/feedbackLL"
+        android:layout_marginTop="2dp"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:src="@drawable/ongoing"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="意见返馈"
+            android:textSize="16dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/whereofLL"
+        android:layout_marginTop="2dp"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:src="@drawable/ongoing"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="关于"
+            android:textSize="16dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/VUPLL"
+        android:layout_marginTop="2dp"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:src="@drawable/ongoing"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="版本更新"
+            android:textSize="16dp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/outTV"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="退出登录"
+        android:textSize="20dp"
+        android:background="#ffffff"
+        android:textColor="#f06e06"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+</LinearLayout>

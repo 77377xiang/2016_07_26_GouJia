@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/px170"
+        android:layout_height="@dimen/px170"
+        android:layout_marginTop="@dimen/px196"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/px100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/px48"
+            android:layout_height="@dimen/px48"
+            android:src="@drawable/account" />
+
+        <EditText
+            android:id="@+id/accountET"
+            android:layout_width="@dimen/px400"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px40"
+            android:hint="请输入账号" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px40"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/px48"
+            android:layout_height="@dimen/px48"
+            android:src="@drawable/password" />
+
+        <EditText
+            android:id="@+id/passwordET"
+            android:layout_width="@dimen/px400"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px40"
+            android:hint="请输入密码"
+            android:password="true" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/registerBTN"
+        android:layout_width="@dimen/px400"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px30"
+        android:background="@drawable/register_button"
+        android:text="登录"
+        android:textSize="@dimen/sp36" />
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xiang.view.NoScrollViewPager
+        android:id="@+id/therePager"
+        android:layout_width="match_parent"
+        android:layout_height="423dp"
+        android:layout_weight="1.35"></com.xiang.view.NoScrollViewPager>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#000"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/taskLL"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/common_ic_googleplayservices" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="任务"
+                android:textColor="#11cd6e" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/workLL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/camera" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="工作"
+                android:textColor="#a9b7b7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/myLL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:textColor="#a9b7b7">
+
+            <ImageView
+
+                android:id="@+id/iv3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/camera" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的"
+                android:textColor="#a9b7b7" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

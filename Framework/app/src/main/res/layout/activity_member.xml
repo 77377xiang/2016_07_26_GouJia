@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backIV"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/common_ic_googleplayservices" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="成员"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ListView
+        android:layout_weight="1"
+        android:id="@+id/otherLV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </ListView>
+    <TextView
+        android:textSize="20dp"
+        android:gravity="center"
+        android:text="共有3名成员"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    </LinearLayout>
+</LinearLayout>

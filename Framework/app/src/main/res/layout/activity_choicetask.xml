@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8e8e8"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="#000000"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ImageView
+            android:id="@+id/backIV"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/common_ic_googleplayservices"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="修改任务状态"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/allRL"
+        android:background="#ffffff"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_height="45dp"
+            android:drawableLeft="@drawable/account"
+            android:drawablePadding="30dp"
+            android:text="全部"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/allIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="38dp"
+            android:layout_marginRight="38dp"
+            android:src="@drawable/accomplish"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="2dp"
+        android:id="@+id/noBeginRL"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/await"
+            android:drawablePadding="30dp"
+            android:gravity="center_vertical"
+            android:text="未开始"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/noBeginIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="39dp"
+            android:layout_marginRight="39dp"
+            android:src="@drawable/accomplish" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/underwayRL"
+        android:background="#ffffff"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ongoing"
+            android:drawablePadding="30dp"
+            android:gravity="center_vertical"
+            android:text="进行中"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/underwayIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="39dp"
+            android:layout_marginRight="39dp"
+            android:src="@drawable/accomplish" />
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:id="@+id/deferredRL"
+        android:background="#ffffff"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/not"
+            android:drawablePadding="30dp"
+            android:gravity="center_vertical"
+            android:text="已延期"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/deferredIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="39dp"
+            android:layout_marginRight="39dp"
+            android:src="@drawable/accomplish" />
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:id="@+id/cancellationRL"
+        android:background="#ffffff"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/x"
+            android:drawablePadding="30dp"
+            android:gravity="center_vertical"
+            android:text="已取消"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/cancellationIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="39dp"
+            android:layout_marginRight="39dp"
+            android:src="@drawable/accomplish" />
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:id="@+id/fishRL"
+        android:background="#ffffff"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_height="45dp"
+            android:drawableLeft="@drawable/accomplish"
+            android:drawablePadding="30dp"
+            android:text="已完成"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/fishIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="39dp"
+            android:layout_marginRight="39dp"
+            android:src="@drawable/accomplish" />
+    </RelativeLayout>
+
+    <TextView
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=""
+        android:id="@+id/textView2" />
+</LinearLayout>

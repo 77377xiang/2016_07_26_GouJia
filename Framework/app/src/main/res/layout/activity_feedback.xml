@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backIV"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/common_ic_googleplayservices" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="意见反馈"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <EditText
+        android:maxLength="500"
+        android:id="@+id/setFeedbackET"
+        android:padding="5dp"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:gravity="left|end"
+        android:hint="请简单叙述你的问题或意见" />
+
+    <TextView
+        android:id="@+id/proportionTV"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="right|center_vertical"
+        android:text="0/500" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:background="#d4d4d4" />
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/submitTV"
+          android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#c74e0c"
+            android:text="提交" />
+    </LinearLayout>
+</LinearLayout>
