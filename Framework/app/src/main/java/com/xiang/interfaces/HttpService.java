@@ -26,7 +26,7 @@ import retrofit2.http.POST;
 import retrofit2.http.Query;
 
 public interface HttpService {
-    //登录
+    //登录有加密
     @FormUrlEncoded
     @POST("appLoginMD5")
     Call<UserResponse> getUserByLogin(@Field("account") String account, @Field("passwordKey") String passwordKey);
